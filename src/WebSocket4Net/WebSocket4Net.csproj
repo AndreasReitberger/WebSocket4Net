@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <id>WebSocket4Net</id>
+	  <Version>0.15.3</Version>
+	  <!--<PackageIcon>logo_128.png</PackageIcon>-->
+	  <NeutralLanguage>en</NeutralLanguage>
+	  <PackageProjectUrl>http://websocket4net.codeplex.com/</PackageProjectUrl>
+	  <RepositoryUrl>http://websocket4net.codeplex.com/</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageReleaseNotes>Check GitHub releases for changelog.</PackageReleaseNotes>
+	  <Description>WebSocket4Net is a .NET websocket client implemtation. It originates from SuperWebSocket WebSocket Client. For better developing of the websocket client, it was separated from SuperWebSocket and was renamed to WebSocket4Net.</Description>
+	  <Authors>Kerry Jiang</Authors>
+	  <Copyright>Kerry Jiang</Copyright>
+
+	  <Tags>WebSocket, WebSocket4Net, SuperWebSocket</Tags>
+	  <LangVersion>10.0</LangVersion>
+	  <PublishReadyToRun>false</PublishReadyToRun>
+
+	  <!--Source-Linking-->
+	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
+	  <EmbedUntrackedSources>true</EmbedUntrackedSources>
+	  <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SuperSocket.ClientEngine.Core" Version="0.10.0" />
+    <!--<PackageReference Include="SuperSocket.Client" Version="2.0.0-beta.16" />
+    <PackageReference Include="SuperSocket.WebSocket" Version="2.0.0-beta.16" />-->
+  </ItemGroup>
+
+</Project>
