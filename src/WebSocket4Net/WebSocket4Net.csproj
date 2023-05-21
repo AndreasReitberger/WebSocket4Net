@@ -27,6 +27,11 @@
 	  <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 
+	<!-- Enable my modifications -->
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);AndreasReitberger</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SuperSocket.ClientEngine.Core" Version="0.10.0" />

@@ -2,8 +2,13 @@
 {
     public partial class WebSocket
     {
+#if AndreasReitberger
+        private TaskCompletionSource<bool>? m_OpenTaskSrc;
+        private TaskCompletionSource<bool>? m_CloseTaskSrc;
+#else
         private TaskCompletionSource<bool> m_OpenTaskSrc;
         private TaskCompletionSource<bool> m_CloseTaskSrc;
+#endif
          
         public async Task<bool> OpenAsync()
         {
@@ -31,13 +36,31 @@
 
         private void FinishOpenTask()
         {
+#if AndreasReitberger
+            ///Reference: https://github.com/AndreasReitberger/KlipperRestApiSharp/issues/45
+            bool? succeeded = m_OpenTaskSrc?.TrySetResult(StateCode == WebSocketStateConst.Open);
+            if(succeeded is false) 
+            {
+
+            }
+#else
             m_OpenTaskSrc?.SetResult(this.StateCode == WebSocketStateConst.Open);
+#endif
             m_OpenTaskSrc = null;
         }
 
         private void FinishCloseTask()
         {
+#if AndreasReitberger
+            ///Reference: https://github.com/AndreasReitberger/KlipperRestApiSharp/issues/45
+            bool? succeeded = m_CloseTaskSrc?.TrySetResult(StateCode == WebSocketStateConst.Closed);
+            if(succeeded is false) 
+            {
+
+            }
+#else
             m_CloseTaskSrc?.SetResult(this.StateCode == WebSocketStateConst.Closed);
+#endif
             m_CloseTaskSrc = null;
         }
 
