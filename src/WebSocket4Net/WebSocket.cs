@@ -1,12 +1,13 @@
 ﻿using SuperSocket.ClientEngine;
 using System.Net;
 using WebSocket4Net.Common;
+using WebSocket4Net.Interfaces;
 using WebSocket4Net.Protocol;
 using ErrorEventArgs = SuperSocket.ClientEngine.ErrorEventArgs;
 
 namespace WebSocket4Net
 {
-    public partial class WebSocket : IDisposable
+    public partial class WebSocket : IWebSocket, IDisposable
     {
         internal TcpClientSession Client { get; private set; }
 
