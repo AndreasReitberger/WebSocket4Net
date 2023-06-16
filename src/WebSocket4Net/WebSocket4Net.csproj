@@ -9,8 +9,8 @@
 	  <Version>0.16</Version>
 	  <!--<PackageIcon>logo_128.png</PackageIcon>-->
 	  <NeutralLanguage>en</NeutralLanguage>
-	  <PackageProjectUrl>http://websocket4net.codeplex.com/</PackageProjectUrl>
-	  <RepositoryUrl>http://websocket4net.codeplex.com/</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/AndreasReitberger/WebSocket4Net/tree/net6</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/AndreasReitberger/WebSocket4Net/tree/net6</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageReleaseNotes>Check GitHub releases for changelog.</PackageReleaseNotes>
 	  <Description>An updated version of WebSocket4Net, which fixes somes bugs and adds net6 support.</Description>
