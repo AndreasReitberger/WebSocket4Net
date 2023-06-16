@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-	  <id>WebSocket4Net6</id>
+	  <id>AR.WebSocket4Net</id>
 	  <Version>0.16</Version>
 	  <!--<PackageIcon>logo_128.png</PackageIcon>-->
 	  <NeutralLanguage>en</NeutralLanguage>
@@ -13,8 +13,8 @@
 	  <RepositoryUrl>http://websocket4net.codeplex.com/</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageReleaseNotes>Check GitHub releases for changelog.</PackageReleaseNotes>
-	  <Description>WebSocket4Net is a .NET websocket client implemtation. It originates from SuperWebSocket WebSocket Client. For better developing of the websocket client, it was separated from SuperWebSocket and was renamed to WebSocket4Net. This nuget is updated to work with net6</Description>
-	  <Authors>Kerry Jiang</Authors>
+	  <Description>An updated version of WebSocket4Net, which fixes somes bugs and adds net6 support.</Description>
+	  <Authors>Kerry Jiang, Andreas Reitberger</Authors>
 	  <Copyright>Kerry Jiang</Copyright>
 
 	  <Tags>WebSocket, WebSocket4Net, SuperWebSocket, net6</Tags>
